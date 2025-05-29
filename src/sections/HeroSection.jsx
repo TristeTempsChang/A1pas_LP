@@ -8,7 +8,7 @@ const HeroSection = () => {
       className="h-full w-full bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${backgroundHero})` }}
     >
-      <div className="bg-white p-4 md:p-8 lgExtra:px-12 rounded-lg shadow-md lgExtra:max-w-3xl 2xl:max-w-4xl w-full mx-4 mt-60 mb-10 lgExtra:mt-80 xl1:mt-96 2xl:mt-[26rem]">
+      <div className="bg-white p-4 md:p-8 lgExtra:px-12 xl1:py-12 rounded-xl shadow-md lgExtra:max-w-3xl xl1:max-w-[51rem] 2xl:max-w-4xl w-full mx-4 mt-60 mb-14 lgExtra:mt-80 xl1:mt-96 2xl:mt-[26rem]">
         <p className="text-2xl md:text-4xl xl:text-5xl font-bold mb-4 text-[#406958] font-fira">
           Trouvez les meilleurs produits locaux près de chez vous !
         </p>
@@ -28,11 +28,12 @@ const HeroSection = () => {
         </div>
       </div>
       <div className='relative hidden lgExtra:flex'>
-        <div className='absolute top-[-3rem] right-[-2rem] xl1:top-[-1rem]'>
+        <div className='absolute top-[-3rem] right-[-2rem] xl1:top-[-2rem] 2xl:top-[-1rem]'>
           <Badge
             topText="Précommande"
             bottomText="ton panier"
             iconClass="fa-solid fa-basket-shopping"
+            className="xl1:w-[7.5rem] xl1:h-[7.5rem]"
           />
         </div>
       </div>

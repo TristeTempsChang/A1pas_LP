@@ -1,12 +1,6 @@
 import vector from "../assets/sticker1.svg";
 
-const Stickers = ({ children, variant = 'step', className = '' }) => {
-
-  const variants = {
-    step: 'bg-[#A75069]',
-    stand: 'bg-[#5DB8D5]',
-    market: 'bg-[#F78C49]'
-  };
+const Stickers = ({ children, className = '' }) => {
 
   return (
     <div className={`relative inline-block ${className}`}>
@@ -14,6 +8,10 @@ const Stickers = ({ children, variant = 'step', className = '' }) => {
         src={vector}
         alt=""
       />
+
+      <span className="absolute inset-0 flex items-center justify-center font-semibold text-white">
+        {children}
+      </span>
     </div>
   );
 };

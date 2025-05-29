@@ -9,7 +9,7 @@ const Card = ({ imageSrc, title, description, step }) => {
         {/* ✅ Sticker positionné en haut à gauche de l’image */}
         <div className='relative'>
           <div className="absolute bottom-[-1.5rem] left-5">
-            <Stickers variant="step">{step}</Stickers>
+            <Stickers>{step}</Stickers>
           </div>
         </div>
       </div>

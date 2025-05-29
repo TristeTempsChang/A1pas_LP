@@ -7,13 +7,14 @@ const PartnerSection = () => {
     <>
       <div className="pt-20 pb-24 font-fira lgExtra:text-center xl1:pt-24">
         <div className="lgExtra:w-3/4 lgExtra:mx-auto">
-          <img className="w-full h-56 md:h-96 object-cover object-center lgExtra:rounded-lg" src={Partner} alt="partner image" />
+          <img className="w-full h-56 md:h-96 xl1:h-[33rem] 2xl:h-[36rem] object-cover object-center lgExtra:rounded-lg" src={Partner} alt="partner image" />
           <div className='relative hidden lgExtra:flex'>
             <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
               <Badge
                 topText="Numériser"
                 bottomText="votre activité"
                 iconClass="fa-solid fa-globe"
+                className="xl1:w-[7.5rem] xl1:h-[7.5rem]"
               />
             </div>
           </div>

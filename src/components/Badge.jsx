@@ -5,15 +5,14 @@ const Badge = ({
   topText,
   bottomText,
   iconClass,
-  className = '',
+  className = ''
 }) => {
   const rText = 31;
   const center = 50;
 
   return (
     <div
-      className={`relative inline-block ${className}`}
-      style={{ width: 100, height: 100 }}
+      className={`relative inline-block w-[6.25rem] h-[6.25rem] ${className}`}
     >
       <img src={CircleBadge} alt="circle" className="w-full h-full block" />
 
