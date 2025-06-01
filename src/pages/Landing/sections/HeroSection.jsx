@@ -1,6 +1,6 @@
-import backgroundHero from '../assets/Hero.jpg';
-import Badge from '../components/Badge';
-import Button from '../components/Button';
+import backgroundHero from '../../../assets/Hero.jpg';
+import Badge from '../../../components/Badge';
+import Button from '../../../components/Button';
 
 const HeroSection = () => {
   return (

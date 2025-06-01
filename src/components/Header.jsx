@@ -1,8 +1,15 @@
+import { Link, useNavigate } from 'react-router-dom';
 import background from '../assets/Background.svg';
 import logo from '../assets/Logo.png'
 import Button from './Button.jsx';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/register');
+  };
+
   return (
     <>
       <div
@@ -13,9 +20,9 @@ const Header = () => {
           <img src={logo} alt='logo' />
           <i className="fa-solid fa-bars text-xl text-[#305347] lgExtra:hidden"></i>
           <div className='hidden lgExtra:flex lgExtra:items-center lgExtra:gap-7 text-[#305347] font-semibold'>
-            <p>Devenir partenaire</p>
-            <p>Connexion</p>
-            <Button iconClass='fa-solid fa-user' className='font-fira md:px-6 md:py-2'>S'inscrire</Button>
+            <Link to="/register"><p>Devenir partenaire</p></Link>
+            <Link to="/register"><p>Connexion</p></Link>
+            <Button iconClass='fa-solid fa-user' className='font-fira md:px-6 md:py-2' onClick={handleClick}>S'inscrire</Button>
           </div>
         </div>
       </div>

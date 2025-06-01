@@ -16,9 +16,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-2xl md:text-3xl flex gap-5">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-tiktok"></i>
+          <a href="https://www.instagram.com/a1pas.app/" className="cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=61576215495897" className="cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/@a1pas.app" className="cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2"><i class="fa-brands fa-tiktok"></i></a>
         </div>
       </div>
     </>

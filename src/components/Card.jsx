@@ -2,7 +2,7 @@ import Stickers from './Stickers.jsx';
 
 const Card = ({ imageSrc, title, description, step }) => {
   return (
-    <div className="bg-[#F5EAE7] rounded-lg overflow-hidden mb-8 lgExtra:w-4/5">
+    <div className="bg-[#F5EAE7] rounded-lg overflow-hidden mb-8 lgExtra:w-4/5 cursor-pointer transition-transform duration-300 ease-in-out hover:-translate-y-2">
       <div className="relative">
         <img src={imageSrc} alt={title} className="w-full h-48 object-cover" />
 

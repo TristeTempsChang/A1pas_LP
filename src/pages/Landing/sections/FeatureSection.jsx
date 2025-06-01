@@ -1,7 +1,7 @@
-import Card from "../components/Card.jsx";
-import step1 from "../assets/step1.jpg"
-import step2 from "../assets/step2.jpg"
-import step3 from "../assets/step3.jpg"
+import Card from "../../../components/Card.jsx";
+import step1 from "../../../assets/step1.jpg"
+import step2 from "../../../assets/step2.jpg"
+import step3 from "../../../assets/step3.jpg"
 
 const FeatureSection = () => {
   return (

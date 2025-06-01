@@ -1,7 +1,14 @@
-import Button from "../components/Button";
-import Map from "../assets/map.png"
+import Button from "../../../components/Button.jsx";
+import Map from "../../../assets/map.png"
+import { useNavigate } from "react-router-dom";
 
 const CTASection = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/register');
+  };
+  
   return (
     <>
       <div className="bg-[#406958] lgExtra:flex lgExtra:p-16 lgExtra:items-center xl1:p-24 2xl:p-32">
@@ -10,7 +17,7 @@ const CTASection = () => {
             <p className="text-2xl md:text-4xl xl:text-5xl font-bold mb-10">Commandez et retirez votre panier</p>
             <p className="font-semibold font-bricolage mb-4 lgExtra:text-lg">Sélectionnez vos produits locaux à l’avance et récupérez-les directement au marché.</p>
             <p className="font-bricolage mb-10">Fini les ruptures de stock, les files d’attente et les allers-retours inutiles : votre panier vous attend, prêt à être savouré.</p>
-            <Button variant="secondary" className="font-fira px-6 py-2 md:px-7 md:py-3">Commandez dès maintenant</Button>
+            <Button variant="secondary" className="font-fira px-6 py-2 md:px-7 md:py-3" onClick={handleClick}>Commandez dès maintenant</Button>
           </div>
         </div>
         <div className="w-full h-full 2xl:w-3/5 2xl:h-3/5">
